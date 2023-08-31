@@ -24,7 +24,7 @@ const Computers = ({ isMobile, isShortScreen }) => {
       {!isShortScreen && 
         <primitive
           object={computer.scene}
-          scale={isMobile ? 0.5 : 0.75}
+          scale={isMobile ? 0.65 : 0.75}
           position={[0, -3.5, -1.5]}
           rotation={[0, 0.25, -0.05]}
         />
@@ -55,7 +55,7 @@ const ComputersCanvas = () => {
   }, [])
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-height: 650px)');
+    const mediaQuery = window.matchMedia('(max-height: 640px)');
 
     setIsShortScreen(mediaQuery.matches);
 
