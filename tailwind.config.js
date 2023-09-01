@@ -17,7 +17,6 @@ module.exports = {
       },
       screens: {
         xs: "450px",
-        // shortScreen: { 'raw': '(min-height: 560px)' },
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/wallpaper10.jpg')",
