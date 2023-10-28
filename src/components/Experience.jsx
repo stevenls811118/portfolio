@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { experiences } from "../constants";
+import { educations, experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
@@ -54,18 +54,62 @@ const ExperienceCard = ({ experience }) => {
   );
 };
 
+const EducationCard = ({ education }) => {
+  return (
+    <VerticalTimelineElement
+      contentStyle={{
+        background: "#1d1836",
+        color: "#fff",
+      }}
+      contentArrowStyle={{
+        borderRight: "7px solid #232631",
+      }}
+      date={education.date}
+      iconStyle={{ background: education.iconBg }}
+      icon={
+        <div className="flex justify-center items-center w-full h-full">
+          <img
+            src={education.icon}
+            alt={education.institution_name}
+            className="w-[75%] h-[75%] object-contain"
+          />
+        </div>
+      }
+      className="hover:scale-110"
+    >
+      <div>
+        <h3 className="text-[24px] font-bold">{education.title}</h3>
+        <p className="text-secondary italic" style={{ margin: 0 }}>
+          {education.institution_name}
+        </p>
+      </div>
+    </VerticalTimelineElement>
+  );
+};
+
 const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        <h2 className={styles.sectionHeadText}>Work Experience</h2>
       </motion.div>
 
-      <div className="mt-20 flex flex-col">
+      <div className="mt-15 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
+          ))}
+        </VerticalTimeline>
+      </div>
+      
+      <motion.div variants={textVariant()} className="mt-10">
+        <h2 className={styles.sectionHeadText}>Education</h2>
+      </motion.div>
+      <div className="mt-15 flex flex-col">
+        <VerticalTimeline>
+          {educations.map((education, index) => (
+            <EducationCard key={index} education={education} />
           ))}
         </VerticalTimeline>
       </div>

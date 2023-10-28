@@ -10,6 +10,7 @@ import close from "./close.svg";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
+import prisma from "./tech/prisma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -20,15 +21,24 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import psql from "./tech/psql.png";
+import nextjs from "./tech/nextjs.png";
+import githubTech from "./tech/github.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import KM from "./company/KM.png";
+import LighthouseLabs from "./company/lighthouselabs.jpg";
+import UofR from "./company/UofR.jpg";
+import SAIT from "./company/SAIT.png";
+import SOS from "./company/SOS.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import whatsThere from "./whatsThere.png";
+import smartToDo from "./smartToDo.png";
+import LightBnB from "./LightBnB.png";
+import Jungle from "./Jungle.png";
 
 export {
   logo,
@@ -56,7 +66,17 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  smartToDo,
+  LightBnB,
+  prisma,
+  psql,
+  nextjs,
+  githubTech,
+  KM,
+  LighthouseLabs,
+  UofR,
+  SAIT,
+  SOS,
+  whatsThere,
+  Jungle,
 };

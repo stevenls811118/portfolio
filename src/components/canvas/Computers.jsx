@@ -7,7 +7,7 @@ import CanvasLoader from '../Loader';
 
 const Computers = ({ isMobile, isShortScreen }) => {
 
-  const computer = useGLTF('./desktop_pc/scene.gltf');
+  const computer = useGLTF('./desktop_pc1/scene.gltf');
 
   return (
     <mesh>

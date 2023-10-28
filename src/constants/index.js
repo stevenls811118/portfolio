@@ -13,16 +13,25 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
+  prisma,
   docker,
   meta,
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  smartToDo,
   threejs,
+  psql,
+  nextjs,
+  githubTech,
+  KM,
+  LighthouseLabs,
+  UofR,
+  SAIT,
+  SOS,
+  whatsThere,
+  LightBnB,
+  Jungle,
 } from "../assets";
 
 export const navLinks = [
@@ -46,7 +55,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Developer",
     icon: mobile,
   },
   {
@@ -54,7 +63,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Frontend Developer",
     icon: creator,
   },
 ];
@@ -73,16 +82,12 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Next JS",
+    icon: nextjs,
   },
   {
     name: "Tailwind CSS",
@@ -93,173 +98,196 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "PostgreSQL",
+    icon: psql,
   },
   {
     name: "Three JS",
     icon: threejs,
   },
   {
-    name: "git",
-    icon: git,
+    name: "GitHub",
+    icon: githubTech,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
+    name: "Prisma",
+    icon: prisma,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Office Systems Expert",
+    company_name: "Konica Minolta Business Solutions",
+    icon: KM,
+    iconBg: "white",
+    date: "Sept 2013 - Current",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Collaborate with national solutions support team to capture requirements for new deployments.",
+      "Implement configurations for MFP installations based on agreed requirements.",
+      "Perform testing of functionalities and software upgrades for MFPs within customer networks.",
+      "Identify, research, and resolve hardware, software, and network system issues raised by customers. Quickly troubleshoot printing systems failures and discrepancies.",
+      "Provide professional and responsive solutions for problems, maintain good customer relationships and an elevated level of customer satisfaction.",
+      `Key accomplishments:
+      Honored with the Top 10 Tech Award of Canada on 14 separate occasions.`
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Network Field Service Technician",
+    company_name: "Success Office Systems",
+    icon: SOS,
+    iconBg: "WHITE",
+    date: "Mar 2011 - Mar 2013",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Tested client machines and equipment, assessed problems and provided viable solutions, effectively communicating with clients to ensure continued productivity.",
+      "Assessed and verified network configurations, ensuring optimal performance and security.",
     ],
   },
 ];
 
-const testimonials = [
+const educations = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    title: "Diploma of Full-Stack Web Development",
+    institution_name: "Lighthouse Labs",
+    icon: LighthouseLabs,
+    iconBg: "white",
+    date: "Aug 2022 - May 2023",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    title: "Electrical Design Certificate",
+    institution_name: "SAIT",
+    icon: SAIT,
+    iconBg: "white",
+    date: "Jan 2016 - Apr 2018",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    title: "AutoCAD Certificate",
+    institution_name: "SAIT",
+    icon: SAIT,
+    iconBg: "white",
+    date: "Jan 2015 - Dec 2016",
+  },
+  {
+    title: "Electronic Systems Engineering",
+    institution_name: "University of Regina",
+    icon: UofR,
+    iconBg: "white",
+    date: "Sept 2003 - Jan 2009",
   },
 ];
+
+// const testimonials = [
+//   {
+//     testimonial:
+//       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+//     name: "Sara Lee",
+//     designation: "CFO",
+//     company: "Acme Co",
+//     image: "https://randomuser.me/api/portraits/women/4.jpg",
+//   },
+//   {
+//     testimonial:
+//       "I've never met a web developer who truly cares about their clients' success like Rick does.",
+//     name: "Chris Brown",
+//     designation: "COO",
+//     company: "DEF Corp",
+//     image: "https://randomuser.me/api/portraits/men/5.jpg",
+//   },
+//   {
+//     testimonial:
+//       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+//     name: "Lisa Wang",
+//     designation: "CTO",
+//     company: "456 Enterprises",
+//     image: "https://randomuser.me/api/portraits/women/6.jpg",
+//   },
+// ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Whats There",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This is a travel companion app that helps users find the most popular attractions in any city they choose to visit. It also allows users to create a profile using Google's OAUTH login, plan multiple trips, and add and remove attractions from their itinerary. The app utilizes Google Maps API and TripAdvisor API to provide users with accurate and up-to-date information about the attractions they wish to visit.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "nextJS",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "tailwindCSS",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: whatsThere,
+    source_code_link: "https://github.com/stevenls811118/whatsThere",
   },
   {
-    name: "Job IT",
+    name: "Smart TODO",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "This SmartToDO app allows users to enter to-do tasks and uses multiple APIs to automatically categorize them into five categories: Film / Series, Restaurants, Books, Products, or General. Users can manually select the category if there's ambiguity to avoid misclassification.",
     tags: [
       {
-        name: "react",
+        name: "JavaScript",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Rapid API",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "SCSS",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: smartToDo,
+    source_code_link: "https://github.com/stevenls811118/SmartTodoApp",
   },
   {
-    name: "Trip Guide",
+    name: "LightBnB",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A simple multi-page Airbnb clone that uses a server-side Javascript to display the information from queries to we oages via SQL queries.",
     tags: [
       {
-        name: "nextjs",
+        name: "JavaScript",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "PSQL",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "SASS",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: LightBnB,
+    source_code_link: "https://github.com/stevenls811118/LightBnB/tree/master/LightBnB_WebApp-master",
+  },
+  {
+    name: "Jungle",
+    description:
+      "A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.",
+    tags: [
+      {
+        name: "Ruby on Rails",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Jungle,
+    source_code_link: "https://github.com/stevenls811118/jungle-rails",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, educations, projects };
